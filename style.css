@@ -2316,12 +2316,12 @@
 			top: 0.25em;
 		}
 
-		.image.fit.self {
-			left: -2em;
+		.image.self img {
+			display: block;
 			display: block;
 			margin: 0 0 0em 0;
-			width: 70%;
-			height: 100%;	
+			width: 350px;
+			border-radius: 15px;
 		}
 		.image.fit {
 			display: block;
