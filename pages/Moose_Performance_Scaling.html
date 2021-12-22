@@ -18,9 +18,9 @@
                 <div class="sidemenu">
 					<ul class="list_side">
 						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
-						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
-						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
-						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html"> Updates </a> </li>
 					</ul>
 				</div>
 			</header>
@@ -63,26 +63,6 @@
 					<img class="project_pic1" src="../images/MOOSE_Weak_Scaling_multi_node_nonlinear_eff_200^3.png" alt="" height="600" width="800">
 					<p>The scaling performance starts to bottleneck as the number of processors increases. Because of this, I discovered that the MOOSE's mesh generator object creates the mesh serially on each processor which slows down the parallel finite element solver significantly. The serial mesh generation process causes each processor to load the entire mesh object on its allocated RAM. In many cases, the mesh overfills the memory-bound of the CPU's allocated RAM and causes the program to crash. Through the help of Dr. Clarno, I had the opportunity to collaborate with the MOOSE source code developer to purpose a fix to the mesh generation process within MOOSE.	</p>	
 			</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="list_side">
-					<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
-					<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
-					<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
-					<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
-				</ul>
-			</div>
-		</footer>
-
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
