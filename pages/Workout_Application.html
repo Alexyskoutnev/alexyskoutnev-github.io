@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Kinova Gen3 Modular Arm Controller </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="../index.html" class="image avatar"><img src="../images/Alexy_Skoutnev_Head.jpg" alt="" /></a>
+					<h1><strong>Alexy Skoutnev</strong><br/>
+					 Aspiring Research Scientist</h1>
+				</div>
+                <div class="sidemenu">
+					<ul class="list_side">
+						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2 class = "Project_Title"> Kinova Gen3 Modular Arm Controller  <br /> </h2>
+						</header>
+						<h3 class="project_sub"> Objective </h3>
+						<p> Developed a robotic arm controller using operational space control for manipulation.</p>
+						<div class="video_">	
+						<video width="800" height="600" autoplay>
+							<source src="../videos/OPC_Manipulator.mp4" type="video/mp4">
+						</video>
+						</div>
+					
+					</section>
+				<!-- Two -->
+				<section id="two">
+						<header class="major">
+							<h2>Keywords</h2>
+						</header>
+						<ul>
+							<li> Joint Controller </li>
+							<li> Operational Space Control </li>
+							<li> Manipulation </li>
+						</ul>
+				</section>
+				<!-- Three -->
+				<section id="three">
+					<header class="major">
+						<h2>Results </h2>
+					</header>
+					<p> The Kinova Gen3 Modular Arm Controller utilizes Operational Space Control to convert position commands into joint torque commands. In this robotic controller, all 7 degrees of freedom are utilized through the help of a null-space filter integrated in the primary control signal.</p>
+					<img class="project_pic" src="../images/OSC_Formulation.png" alt="" height="50" width="700">
+					<p> The control framework is able to do basic manipulation task such as picking up a object while the base is moving. </p>
+					<img class="project_pic" src="../images/velocity_error.png" alt="" height="600" width="800">
+					<img class="project_pic" src="../images/A1_action.png" alt="" height="600" width="800">
+					<p> The high-level commands is obtained by imitation learning, a form of supervised learning. The data for the training dataset came from a IMO sensor and a Intel RealSense Depth Camera. With imitation learning, the legged robot could successfully traverse indoor environments with obstacles and human movement. </p>	
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="list_side">
+					<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+					<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+					<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+					<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+				</ul>
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Pin Channel Heat Transfer </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="../index.html" class="image avatar"><img src="../images/Alexy_Skoutnev_Head.jpg" alt="" /></a>
+					<h1><strong>Alexy Skoutnev</strong><br/>
+					 Aspiring Research Scientist</h1>
+				</div>
+                <div class="sidemenu">
+					<ul class="list_side">
+						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2 class = "Project_Title"> Pin Channel Heat Transfer  <br /> </h2>
+						</header>
+						<h3 class="project_sub"> Objective </h3>
+						<p> Developed a MOOSE application for simulating pin channel heat transfer within a nuclear assembly.</p>
+						<div class="video_">	
+						<video width="800" height="600" autoplay loop>
+							<source src="../videos/Heat_Diffusion.mp4" type="video/mp4">
+						</video>
+						</div>
+					
+					</section>
+				<!-- Two -->
+				<section id="two">
+						<header class="major">
+							<h2>Keywords</h2>
+						</header>
+						<ul>
+							<li> Finite Element Methods</li>
+							<li> Heat Diffusion </li>
+							<li> Neutron Diffusion </li>
+                            <li> High Performance Computing </li>
+						</ul>
+				</section>
+				<!-- Three -->
+				<section id="three">
+					<header class="major">
+						<h2>Results </h2>
+					</header>
+					<p> Utilized a high-performance computing library, MOOSE, to develop a simulation model to calculate the heat transfer between the nuclear assembly rod and coolant. The assembly mesh geometry was created through CUBIT to map out the coolant and fuel layout. The testing simulation is built on the supercomputer architecture, Frontera, to obtain an in-depth diffusion model. The pin-channel model can accurately simulate heat diffusion within a nuclear reactor. 
+					</p>
+					<img class="project_pic" src="../images/Double_Mesh_Heat_Conduction.png" alt="" height="600" width="800">
+					<p> The pin-channel model computes a cumulative integral over all the mesh nodes in a particular direction to obtain the temperature profiles of the coolant, cladding, and fuel. </p>	
+                    <img class="project_pic" src="../images/Cummative_Heat_Integral.png" alt="" height="600" width="800">
+                    <p> With the temperature profiles, the pin-channel values are coupled with a neutron diffusion model to accurately predict the spread patterns of neutrons inside a nuclear assembly. With a valid simulation model, we plan to utilize a machine learning optimizer to find the optimal design parameters for the the most efficient nuclear reactor in terms of power output. </p>	
+
+				</section>
+				
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="list_side">
+					<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+					<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+					<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+					<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+				</ul>
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

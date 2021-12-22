@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Perceptive Locomotion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="../index.html" class="image avatar"><img src="../images/Alexy_Skoutnev_Head.jpg" alt="" /></a>
+					<h1><strong>Alexy Skoutnev</strong><br/>
+					 Aspiring Research Scientist</h1>
+				</div>
+				<div class="sidemenu">
+					<ul class="list_side">
+						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2 class = "Project_Title">Perceptive Locomotion<br /> </h2>
+								<h3> Contributors: Alexy Skoutnev, Mingyo Seo, Ryan Gupta, Dr. Yuke Zhu, Dr. Luis Sentis </h3>
+						</header>
+						<h3 class="project_sub"> Objective </h3>
+						<p> Integrate a learning based algorithms for better gait planning on unstructured terrain within the Unitree A1 quadrupedal robot.</p>
+						<div class="video_">	
+						<video width="800" height="600" autoplay loopy>
+							<source src="../videos/A1_Test1.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+						</video>
+						</div>
+					
+					</section>
+				<!-- Two -->
+				<section id="two">
+						<header class="major">
+							<h2>Keywords</h2>
+						</header>
+						<ul>
+							<li> Legged Locomotion </li>
+							<li> Imitation Learning </li>
+							<li> Reinforcement Learning </li>
+							<li> Whole-body Control </li>
+						</ul>
+				</section>
+				<!-- Three -->
+				<section id="three">
+					<header class="major">
+						<h2>Results </h2>
+					</header>
+					<p> The legged locomotion system utilizes a hierarchical framework for terrain-aware legged locomotion. The low-level controller is based on whole-body impluse control and model predictive control for faster response time.</p>
+					<img class="project_pic" src="../images/Control.jpg" alt="" height="600" width="800">
+					<p> In previous research results, a reinforced network was trained on the gain planning module to determine its effectiveness on uneven terrain. Due to the computational limits and poor convergence within the robot's agent, imitation learning provided a alternate solution. We found that imitation learning utilizes a more robust policy by exploiting environmental information conducted by human demonstrations compared to a blind locomotion policy. The action policies conducted by the low-level controller are seen below. </p>
+					<img class="project_pic" src="../images/velocity_error.png" alt="" height="600" width="800">
+					<img class="project_pic" src="../images/A1_action.png" alt="" height="600" width="800">
+					<p> The high-level commands (yaw angle, velocity) is obtained by imitation learning, a form of supervised learning. The data for the training dataset came from a IMO sensor and a Intel RealSense Depth Camera. With imitation learning, the legged robot could successfully traverse indoor environments with obstacles and human movement. Below is a sample experiment between the robot actions (white bar) and the human actions (pink bar). </p>	
+					<div id="wrapper_"> 
+						<video id="home1" width="400" height="300" poster="images/video.jpg" autoplay loop> 
+							<source type="video/mp4" src="../videos/center_color_fixed.mp4" /> 
+						</video>
+						<video id="home2" width="400" height="300" poster="images/video.jpg" autoplay loop> 
+							<source type="video/mp4" src="../videos/center_depth_fixed.mp4" /> 
+						</video>
+						<div class="clear"></div> 
+						<video id="home1" width="400" height="300" poster="images/video.jpg" autoplay loop> 
+							<source type="video/mp4" src="../videos/velocity.mp4" /> 
+						</video>
+						<video id="home2" width="400" height="300" poster="images/video.jpg" autoplay loop> 
+							<source type="video/mp4" src="../videos/yaw_rate.mp4" /> 
+						</video>
+						<div class="clear"></div> 
+					</div>
+					<br>
+					<br>
+					<br>
+					<p> Imitation learning has the potential for quick adaption and implementation within a dynamic environment for mobile robots. The robot's navigation policy results are presented below that incorporates previous robot actions and image history. </p>
+					<img class="project_pic" src="../images/vel.png" alt="" height="600" width="800">
+					<img class="project_pic" src="../images/yaw.png" alt="" height="600" width="800">
+				</section>
+				<div class="video_">	
+					<video width="800" height="600" controls="controls" >
+						<source src="../videos/A1_Walk.mp4" type="video/mp4" >
+					  Your browser does not support the video tag.
+					</video>
+				</div>
+				
+			</div>
+	</body>
+</html>

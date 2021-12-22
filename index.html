@@ -1,104 +1,140 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<title>Alexy Skoutnev</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="landing">
+	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header" class="alt">
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<!-- <li><a href="projects.html">Projects</a></li>
-						<li><a href="experiences.html">Experience</a></li> -->
-					</ul>
-				</nav>
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/Alexy_Skoutnev_Head.jpg" alt="" /></a>
+					<h1><strong>Alexy Skoutnev</strong><br/>
+					 Aspiring Research Scientist</h1>
+				</div>
 			</header>
 
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		<!-- Main -->
+			<div id="main">
 
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Alexy Skoutnev</h2>
-				<p>University of Texas  <br /> Mathematics and Mechanical Engineering</p>
-			</section>
-		<!-- One -->
-			<section id="one" class="wrapper style1">
-				<div class="container 75%">
-					<div class="row 200%">
-						<div class="6u 12u$(medium)">
-							<header class="major">
-								<h2>About Me</h2>
-								<div class="image self">
-									<img src="self_pic.jpg" alt="" />
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Welcome to my Homepage!<br />
+						</header>
+						<p>I am a senior at the University of Texas at Austin that is double majoring in Mathematics and Mechanical Engineering. I am interested in doing research in the field of robotics that involves control, manipulation, planning, and learning. My previous research is in robotic learning and preception from the UT Austin Robot Perception and Learning Lab under Dr. Zhu and high-performance and parallel computing from the UT Austin Computational Nuclear Engineering research group under Dr. Clarno. <p> Feel free to check out all the projects I have been involved in below. </p>
+							 </p>
+						
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<a id = "projects_jump" name="projects_jump"> </a>
+						<h2>Projects</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/a1.png" alt="" height="400px" width="300px"></a>
+								<div href="Perceptive_Locomotion.html">
+								<a href="pages/Perceptive_Locomotion.html"><h3>Perceptive Locomotion</h3>
+								<p>Terrain-aware Gait Planning for Agile Legged Locomotion</p>
+								</a>
+								<div>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/kinova.png" alt="" height="400px" width="300px"></a>
+								<a href="pages/Kinova_Controller.html">
+								<h3>Kinova Gen3 Modular Arm Controller</h3>
+								<p>Manipulator Controller Using Operational Space Formulation</p>
+								</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/Nuclear_Reactor.jpg" alt="" height="400px" width="300px"></a>
+								<a href="pages/Pin_Channel_Heat_Transfer.html">
+								<h3>Pin-Channel Heat Transfer</h3>
+								<p>Heat Transfer Simulations in Reactor Assembly</p>
+								</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/TACC.jpg" alt="" height="400px" width="300px"></a>
+								<a href="pages/Moose_Performance_Scaling.html">
+								<h3>Performance Scaling of MOOSE</h3>
+								<p>Parallel Computing Performance of a Multiphysics Object-Oriented Simulation Environment</p>
+								</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/RC_Project.jpg" alt="" height="400px" width="300px"></a>
+								<a href="pages/RC_Design.html">
+								<h3> Remote Control Car </h3>
+								<p>3D Printed RC Car Project</p>
+								</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/No_Sweat_Group_Logo.jpg" alt="" height="400px" width="300px"></a>
+								<a href="https://summer-2021.cs.utexas.edu/cs329e-mitra/alexysk/Project/index.html">
+								<h3>Workout Application</h3>
+								<p>Full Stack Website for Customizing Workouts</p>
+								</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/Sample_Number.jpg" alt="" height="400px" width="300px"></a>
+								<h3>Handwritten Number Classifier</h3>
+								<p>Realtime Camera Handwritten Number Classifier</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/Spam_Email.png" alt="" height="400px" width="300px"></a>
+								<h3>Spam Email Detector</h3>
+								<p>Spam Classification based on Supervised Learning Algorithms</p>
+							</article>
+						</div>
+	
+					</section>
+
+					<section id="two">
+						<a id = "paper_jump"> </a>
+						<h2>Research Papers</h2>
+						<div class="main_divide">
+							<div class="container_">
+								<div class="left_paper_name"> <a href="extra/Parallel_Scaling_Performace_Moose.pdf"> Parallel Scaling Performance of MOOSE on TACC </a> </div>
+								<div class="right_date"> November, 2021 </div>
 								</div>
-							</header>
 						</div>
-						<div class="6u$ 12u$(medium)">
-							<p>Hello! I'm a third year Mathematics and Mechanical Engineering student at the University of Texes with the interest in artifical intelligence, and hardware engineering. I love building functional instruments from the grounds up and seeing 'theory' work in action. Outside of school, I like to go on hikes, explore the city of Austin, and read that occasional science fiction novel.</p>
-							<p>My past experience in applied mathematics and computer science has made me gotten in machine learning and neural networks. Its amazing the amount of mathematics, computer science, and engineering that is required for autonomous decision making. I hope that one day this technology could make Asimov's universe a reality.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!-- Two -->
-		<section id="two" class="wrapper style2 special">
-			<div class="container">
-				<header class="major">
-					<h2>Past Projects</h2>
-				</header>
-				<div class="row 150%">
-					<div class="6u 12u$(medium)">
-						<div class="image fit captioned">
-							<a href="https://github.com/Alexyskoutnev/Spam_Mail_Classifier">
-							<img src="Spam_email.jpg" alt="" />
-							</a>
-							<h3>Spam Email Dectector</h3>
-						</div>
-					</div>
-					<div class="6u$ 12u$(medium)">
-						<div class="image fit captioned">
-							<img src="Diplomacy.png" alt="" />
-							<h3>Diplomacy</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+					
+					</section>
 
-		<section id="two" class="wrapper style2 special">
-			<div class="container">
-				<div class="row 150%">
-					<div class="6u 12u$(medium)">
-						<div class="image fit captioned">
-							<a href="https://github.com/Alexyskoutnev/Baby_Names_SQL">
-							<img src="Names.png" alt="" />
-						</a>
-							<h3>Baby Names Cipher</h3>
+					<section id="two">
+						<a id = "updates_jump"> </a>
+						<h2>Updates</h2>
+						<div class="row">
+							<p> Created my personal research page </p>
 						</div>
-					</div>
-					<div class="6u$ 12u$(medium)">
-						<div class="image fit captioned">
-							<a href="https://github.com/Alexyskoutnev/Word-Reduction">
-							<img src="words.png" alt="" />
-						</a>
-							<h3>Reducible Word</h3>
+				
+					</section>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+					
+				</div>>
+
 		<!-- Footer -->
-		<footer id="footer">
-			<div class="container">
-				<ul class="copyright">
-					<li>&copy; Alexy Skoutnev 2021</li>
-				</ul>
-			</div>
-		</footer>
+			<footer id="footer">
+				<div class="inner">
+					<ul class="list_side">
+						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>

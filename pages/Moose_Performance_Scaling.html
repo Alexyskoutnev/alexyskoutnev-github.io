@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Moose Performance Scaling </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="../index.html" class="image avatar"><img src="../images/Alexy_Skoutnev_Head.jpg" alt="" /></a>
+					<h1><strong>Alexy Skoutnev</strong><br/>
+					 Aspiring Research Scientist</h1>
+				</div>
+                <div class="sidemenu">
+					<ul class="list_side">
+						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+					</ul>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2 class = "Project_Title"> Moose Performance Scaling  <br /> </h2>
+						</header>
+						<h3 class="project_sub"> Objective </h3>
+						<p> Created a high-performance testing interface on the supercomputer, Frontera, to test the scaling performance of MOOSE.</p>
+						<img class="project_pic" src="../images/Parallel_Computing.jpg" alt="" height="300" width="700">
+				
+					</section>
+				<!-- Two -->
+				<section id="two">
+						<header class="major">
+							<h2>Keywords</h2>
+						</header>
+						<ul>
+							<li> Parallel Computing </li>
+							<li> Performance Scaling </li>
+							<li> Software Optimization </li>
+						</ul>
+				</section>
+				<!-- Three -->
+				<section id="three">
+					<header class="major">
+						<h2>Results </h2>
+					</header>
+					Through the Moncrief Internship, I created a testing interface for large-scale computational problems regarding time-dependent and steady-state heat diffusion problems. I was tasked to build and compile the parallel finite element library, MOOSE, for robustness and scalability. I worked with a supercomputer architecture where I learned how to run software on the Frontera supercomputer at the Texas Advanced Computing System. As a starting point, I learned how to use MPICH, a portable implementation of the Message Passing Interface, for performance benchmarking. I evaluated strong and weak scaling which tests a parallel architecture performance in terms of the work done per processor. For strong scaling, the number of CPU instructions per processor decreases as the number of processors working together is increased. While for weak scaling, the number of CPU instructions is constant as the number of processors is increased. The following strong and weak scaling benchmarks of MPI on Frontera are below.					<img class="project_pic1" src="../images/MPI_Strong_Internode_2e9_exec.png" alt="" height="600" width="800">
+					<img class="project_pic1" src="../images/MPI_Strong_Internode_2e10_eff.png" alt="" height="600" width="800">
+					<p> After obtaining all the performance benchmarks regarding strong and weaking for MPI, I investigated the scaling performance of MOOSE through strong and weaking scaling. MOOSE's performance benchmarks are seen below where the parallel software library efficiency started to drop compared to MPI benchmarks. </p>
+					<img class="project_pic1" src="../images/MOOSE_Strong_Scaling_multi_node_nonlinear_200^3.png" alt="" height="600" width="800">
+					<img class="project_pic1" src="../images/MOOSE_Strong_Scaling_Multi_node_Total_Eff_200^3.png" alt="" height="600" width="800">
+					<img class="project_pic1" src="../images/MOOSE_Weak_Scaling_multi_node_nonlinear_200^3.png" alt="" height="600" width="800">
+					<img class="project_pic1" src="../images/MOOSE_Weak_Scaling_multi_node_nonlinear_eff_200^3.png" alt="" height="600" width="800">
+					<p>The scaling performance starts to bottleneck as the number of processors increases. Because of this, I discovered that the MOOSE's mesh generator object creates the mesh serially on each processor which slows down the parallel finite element solver significantly. The serial mesh generation process causes each processor to load the entire mesh object on its allocated RAM. In many cases, the mesh overfills the memory-bound of the CPU's allocated RAM and causes the program to crash. Through the help of Dr. Clarno, I had the opportunity to collaborate with the MOOSE source code developer to purpose a fix to the mesh generation process within MOOSE.	</p>	
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="list_side">
+					<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
+					<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
+					<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
+					<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+				</ul>
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
