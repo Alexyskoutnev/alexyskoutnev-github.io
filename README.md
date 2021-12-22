@@ -1,3 +1,3 @@
 # alexyskoutnev-github.io
-Personal Website (Work in Progress)
-Need to add functionality to project.html and experience.html
+Personal Website
+Link to website: https://alexyskoutnev.github.io/alexyskoutnev-github.io/index.html
