@@ -3305,11 +3305,11 @@ input, select, textarea {
 	width: 100%;
 }
 .left_paper_name {
-	width: 85%;
+	width: 90%;
 	float: left;
 }
 .right_date {
-	width: 15%;
+	width: 10%;
 	float:left;
 }
 .container_{

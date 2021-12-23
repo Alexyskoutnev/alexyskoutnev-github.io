@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> Kinova Gen3 Modular Arm Controller </title>
+		<title> Spam Email Detector </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css"/>
@@ -18,9 +18,10 @@
                 <div class="sidemenu">
 					<ul class="list_side">
 						<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
-						<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
-						<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
-						<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html">  Projects </a>  </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html"> Papers </a> </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html"> Presentations </a> </li>
+						<li class="ul_side"> <a class="linkless" href="../index.html"> Updates </a> </li>
 					</ul>
 				</div>
 			</header>
@@ -31,15 +32,11 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2 class = "Project_Title"> Kinova Gen3 Modular Arm Controller  <br /> </h2>
+							<h2 class = "Project_Title"> Spam Email Detector  <br /> </h2>
 						</header>
 						<h3 class="project_sub"> Objective </h3>
-						<p> Developed a robotic arm controller using operational space control for manipulation.</p>
-						<div class="video_">	
-						<video width="800" height="600" autoplay>
-							<source src="../videos/OPC_Manipulator.mp4" type="video/mp4">
-						</video>
-						</div>
+						<p> Investigated five different supervised learning algorithms for detecting whether an email is spam or not. </p>
+						<img class="project_pic" src="../images/Spam_Email_Example.png" alt="" height="400" width="600">
 					
 					</section>
 				<!-- Two -->
@@ -48,9 +45,8 @@
 							<h2>Keywords</h2>
 						</header>
 						<ul>
-							<li> Joint Controller </li>
-							<li> Operational Space Control </li>
-							<li> Manipulation </li>
+							<li> Natural Language Processing </li>
+							<li> Classification in Machine Learning </li>
 						</ul>
 				</section>
 				<!-- Three -->
@@ -58,33 +54,17 @@
 					<header class="major">
 						<h2>Results </h2>
 					</header>
-					<p> The Kinova Gen3 Modular Arm Controller utilizes Operational Space Control to convert position commands into joint torque commands. In this robotic controller, all 7 degrees of freedom are utilized through the help of a null-space filter integrated in the primary control signal.</p>
-					<img class="project_pic" src="../images/OSC_Formulation.png" alt="" height="50" width="700">
-					<p> The control framework is able to do basic manipulation task such as picking up a object while the base is moving. The controller has been tested in PyBullet and iGibson for enivormental interaction </p>
-					
+
+					<p> Spam Email Detector is a Python application I developed while doing my independent study project through UT's Direct Reading Program. Spam Email Detector utilizes five different machine learning classifiers to identify whether an email is spam or not. The five machine learning classifiers are Gaussian Distribution, Random Forest, Support Vector Machine, Logistic Regression, and Multi-layer Perceptron (MLP). It was noticed that the Logistic Regression and Multi-layer Perceptron classifer performed the best for filtering emails for spam. Exmaple emails and corresponding prediction by each classifer is seen below. </p>
+					<img class="project_pic" src="../images/Spam_Diagram.png" alt="" height="150" width="800">
+					<img class="project_pic" src="../images/Spam_results.png" alt="" height="150" width="800">
+					<img class="project_pic" src="../images/Not_Spam_Diagram.png" alt="" height="150" width="800">
+					<img class="project_pic" src="../images/Not_Spam_Example.png" alt="" height="150" width="800">
+					<br>
+					<p> As a final project, I did a presentation over Support Vector Machine at the Direct Reading Program presentation event. I had the opportunity to explain the mathematical groundwork seen within the classifier and demonstrate an example program in R utilizing Support Vector Machine. The link to the slide show is <a href="../extra/Support_Vector_Machine.pdf"> here </a>  </p>
 				</section>
 				
 			</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="list_side">
-					<li class="ul_side"> <a class="linkless" href="extra/Alexy_Skoutnev_Curriculum_Vitae_Fall_2021.pdf"> Curriculum Vitae </a></li>
-					<li class="ul_side"> <a class="linkless" href="#projects_jump">  Projects </a>  </li>
-					<li class="ul_side"> <a class="linkless" href="#paper_jump"> Papers </a> </li>
-					<li class="ul_side"> <a class="linkless" href="#updates_jump"> Updates </a> </li>
-				</ul>
-			</div>
-		</footer>
-
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
